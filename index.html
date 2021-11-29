@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picky Cars</title>
+    <link rel="icon" href="exito.png">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+    
+    <style>
+
+        .content {
+            width: 50%;
+            margin: 0 auto;
+            background-color: rgb(97, 0, 148);
+            border-radius: 30px;
+            border: transparent;
+            font-family: "Mitr", sans-serif;
+            text-align: center;
+            margin-top: 150px;
+            padding-top: 5px;
+            padding-bottom: 20px;
+            color: white;
+        }
+
+        .content label {
+            margin-right: 200px;
+        }
+
+        input[type="text"] {
+            font-family: "Mitr", sans-serif;
+            border: 1px solid rgb(159, 95, 128);
+            border-radius: 10px;
+            margin: 10px auto;
+            padding: 3px 150px 6px 5px;
+            background-color: rgb(159, 95, 128);
+            color: white;
+        }
+
+        input[type="password"] {
+            font-family: "Mitr", sans-serif;
+            border: 1px solid rgb(159, 95, 128);
+            border-radius: 10px;
+            margin: 0 auto;
+            padding: 3px 150px 6px 5px;
+            background-color: rgb(159, 95, 128);
+            color: white;
+        }
+
+        input[type="submit"] {
+            border-collapse: collapse;
+            border: transparent;
+            border-radius: 15px;
+            font-family: "Mitr", sans-serif;
+            color: white;
+            margin: 15px auto;
+            padding: 5px 50px 5px 50px;
+            background-color: #072f5f;
+            transition: 0.5s;
+        }
+
+        input[type="submit"]:hover {
+            color: rgb(246, 240, 245);
+            background-color: #fe416477;
+        }
+
+        ::placeholder {
+            color: rgba(255, 255, 255, 0.466)
+        }
+
+        .regis {
+            text-decoration: none;
+            font-size: 13px;
+            border-collapse: collapse;
+            border: transparent;
+            border-radius: 15px;
+            font-family: "Mitr", sans-serif;
+            color: rgb(255, 255, 255);
+            margin: 15px;
+            padding: 5px 50px 5px 50px;
+            background-color: #072f5f;
+            transition: 0.5s;
+        }
+
+        .regis:hover {
+            text-decoration: none;
+            color: white;
+            background-color: #fe416477;
+        }
+
+        .footer {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 100%;
+            height: 50px;
+            color: white;
+            font-family: "Mitr", sans-serif;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: #082738;
+        }
+
+        .footer p {
+            text-align: right;
+            margin-right: 50px;
+            position: relative;
+        }
+
+    </style>
+</head>
+
+<body  background = "../inventario/carro.png">
+    <div class="content">
+        <h1>Ingresar</h1>
+        <form action="login.php" method="POST">
+            <label for="username">Usuario: </label>
+            <br>
+            <input type="text" name="username" placeholder="Ingresa tu usuario :" required>
+            <br>
+            <label for="pass">Contraseña: </label>
+            <br>
+            <input type="password" name="password" placeholder="Ingresa tu contraseña :" required>
+            <br>
+            <input type="submit" value="Ingresar">
+        </form>
+        <a href="main/member.html" class="regis">Registro</a>
+    </div>
+    <div class="footer">
+        <p>Picky Cars</p>
+    </div>
+</body>
+
+</html>
